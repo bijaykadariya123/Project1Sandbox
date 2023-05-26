@@ -28,10 +28,10 @@ $form.on("submit", (event) => {
       (monthNumber === 12 && dayNumber === 25)
     ) {
       newDiv.html(`
-        <h1>${info.type}</h1>
+        <h1> It is a Holiday: ${info.type}</h1>
         `);
     } else {
-      `<h1>${info.type}</h1>`;
+      `<h1> It is not a holiday: ${info.type}</h1>`;
     }
     div.append(newDiv);
   });
